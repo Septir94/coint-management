@@ -1,0 +1,297 @@
+.layout {
+  background-color    :#fff;
+  overflow-x          : hidden;
+  overflow-y          : hidden;
+  display             : flex;
+  flex-direction      : row;
+}
+
+.sider-menu {
+  overflow-x      : auto;
+  height          : 100vh;
+  left            : 0;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar{
+  width        : 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background   : rgb(190, 190, 192);
+  border-radius: 20px;
+}
+
+
+.logo {
+  background-color     : rgb(255, 255, 255);
+  display              : flex;
+  padding-left         : 5px;
+  padding-top          : 18px;
+  padding-bottom       : 18px;
+  justify-content      : center;
+  position             : sticky;
+  top                  : 0;
+  z-index              : 2;
+}
+
+.menu {
+  background-color      : #fff;
+  padding-top           : 15%;
+  display               : flex;
+  flex-direction        : column;
+  transition            : width 25ms;
+  padding-bottom        : 10%;
+
+  &:hover{
+    color               :#ff3333;
+  }
+
+  &__icon {
+    color               : #918c8c;
+
+    &.icon {
+      color             : #ff3333;
+    }
+    
+    &:hover {
+      color             :#ff3333;
+    }
+  }
+}
+
+.ant-row {
+  width                     : 90%;
+}
+
+.site-layout{
+  background                : rgb(241, 241, 241);
+  overflow-y                : hidden;
+  height                    : 100vh;
+  
+}
+
+.site-layout-background {
+  background-color          : #fff;
+  margin-left               : 1%;
+  margin-top                : 1%;
+  width                     : 98%;
+  height                    : 8%;
+  border-top-right-radius   : 10px;
+  border-top-left-radius    : 10px;
+  padding-top               : 2%;
+  display                   : flex;
+  flex-direction            : row;
+}
+
+.settings {
+  align-content             : flex-end;
+  justify-content           : flex-end;
+  margin-right              : 38px;
+  width                     : 95%;
+  margin-top                : 5.5%;
+}
+
+.site-layout-content{
+  background-color          : rgb(255, 255, 255);
+  margin-left               : 1%;
+  width                     : 98%;
+  max-width                 : 98% !important;
+  height                    : 91%;
+  border-bottom-left-radius : 10px;
+  border-bottom-right-radius: 10px;
+  padding-top               : 1%;
+  margin-top                : 0%;
+  display                   : flex;
+  flex-direction            : row;
+}
+
+.trigger {
+  z-index                   : 2;
+  margin-top                : 3.2%;
+  padding-top               : 0.7rem;
+  padding-bottom            : 0.6rem;
+  border-top-right-radius   : 18px;
+  border-bottom-right-radius: 18px;
+  font-size                 : 1.4rem;
+  color                     :#fff !important;
+  background-color          : #ff3333;
+  width                     : 8%;
+  height                    : 30px !important;
+  align-content             : center;
+}
+
+// .ant-menu-submenu-title{
+//   color                     : #918c8c;
+
+//    &:hover {
+//       color                 :#ff3333;
+//       background-color      : #ff3333;
+//       // border-radius         : 25px;
+//    }
+// }
+
+.ant-layout-content {
+  flex                      : auto;
+}
+
+.ant-image-img {
+  width                     : 90% !important;
+  height                    : auto;
+}
+
+.ant-dropdown-link {
+  color                     : #000 !important;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+
+    &__notification {
+    font-size               : 20px;
+    padding-top             : 3px;
+    margin-left             : 10px !important;
+    color                   :#666363;
+  }
+
+  &__image {
+    z-index                 : 2;
+    margin-left             : 18px;
+    margin-top              : 17px!important;
+    font-size               : 30px;
+    color                   : #248df0;
+  }
+
+  &__menus {
+
+    &--button{
+      border                : none;
+    }
+  }
+
+  
+}
+.dropdown {
+    margin-left: 18px;
+    margin-top: 3px;
+
+
+  &__icon {
+    margin-left     : 6px;
+  }
+}
+
+.icon {
+  &__profile {
+    font-size       : 16px;
+    margin-right    : 16px;
+  }
+
+  &__title {
+    font-size       : 14px;
+  }
+}
+
+
+.menu__title {
+  color                : #918c8c;
+  padding-left         : 24px;
+  align-items          : center;
+  font-weight          : bold;
+  font-size            : 14px;
+
+}
+
+.menu__title--sub {
+  padding-left       : 2px;
+  font-weight        : bolder;
+  font-size          : 13px;
+
+}
+
+.menu__titleActive {
+  color                :#ff3333!important;
+  padding-left         : 24px;
+  align-items          : center;
+  font-weight          : bold;
+  font-size            : 14px;
+
+}
+
+.menu__title--subActive {
+  padding-left       : 2px;
+  font-size          : 13px;
+  color              :#ff3333!important;
+  background-color   : #fff!important;
+}
+
+.ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-expand-icon,
+.ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
+  color              :#ff3333!important;
+}
+
+.ant-menu-dark .ant-menu-item:hover,
+.ant-menu-dark .ant-menu-item-active,
+.ant-menu-dark .ant-menu-submenu-active,
+.ant-menu-dark .ant-menu-submenu-open,
+.ant-menu-dark .ant-menu-submenu-selected,
+.ant-menu-dark .ant-menu-submenu-title:hover {
+  color             : #fff;
+  background-color  : red!important;
+}
+
+.ant-image-img.icon--image {
+  width                 : 1.9rem !important;
+  margin-left           : 3px !important;
+}
+
+// @media (min-width: 576px) { 
+//   .menu__title--sub, 
+//   .menu__title--subActive,
+//   .menu__titleActive,
+//   .menu__title {
+//     font-size: 14px;
+//   }
+
+  
+// }
+
+// @media (min-width: 768px) { 
+//   .menu__title--sub, 
+//   .menu__title--subActive,
+//   .menu__titleActive,
+//   .menu__title {
+//     font-size: 14px;
+//   }
+
+  
+// }
+
+// @media (min-width: 992px) { 
+//   .menu__title--sub, 
+//   .menu__title--subActive,
+//   .menu__titleActive,
+//   .menu__title {
+//   font-size: 14px;
+//   }
+
+  
+// }
+
+// @media (min-width: 1200px) { 
+//   .menu__title--sub, 
+//   .menu__title--subActive,
+//   .menu__titleActive,
+//   .menu__title {
+//   font-size: 16px;
+//   }
+// }
+
+
+
+
+

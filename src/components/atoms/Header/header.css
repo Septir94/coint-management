@@ -1,0 +1,14 @@
+.header-container{
+    position: relative;
+    top: 0;
+    text-align: left;
+    width: 100vw;
+    height: 2vw;
+    background-color: aliceblue;
+    font-weight: bold;
+    color: coral;
+
+}
+.title {
+    margin-left: 2vw;
+}
