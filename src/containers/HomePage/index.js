@@ -11,10 +11,10 @@ import Table from "../../components/organism/Table/Table";
 	 dispatch(initiateCointList());
 	}, [])
 	return (
-		<div className="outer-container">
+		<div className=".container-fluid">
 			<Header/>
 			<h3 style={{color:"GrayText",fontSize:"1em"}}>
-			Today's Cryptocurrency Prices by Market Cap
+			Today's Cryptocurrency Prices by Song Company
 			</h3>
 			<Table/>
 		</div>

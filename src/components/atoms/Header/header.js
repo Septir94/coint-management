@@ -4,10 +4,10 @@ import {MoneyCollectFilled} from '@ant-design/icons'
 
 export default function Header() {
     return (
-        <div className="header-container">
+        <div className="header-container .container-fluid">
             <div className="title">
             <MoneyCollectFilled/>
-            <label> Song Market Coint</label>
+            <label> Song's Crypto Monitoring</label>
             </div>
         </div>
     )

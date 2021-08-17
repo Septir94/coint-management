@@ -5,16 +5,14 @@ import Swal from "sweetalert2";
 
 export const initiateCointList = () => (dispatch) => {
 	globalApis.get("/coins/list").then((data)=>{
-		
-		
-		
+
 			globalApis.get("/coins/markets",{params:{
 				vs_currency:"usd",price_change_percentage:"7d",sparkline:true
 			}},{}).then((data)=>{
 				dispatch({
 					type:"get-market-list",
 					marketList:data.data,
-					dataSlice:data.data.slice(0,10)
+					dataSlice:[]
 				})
 				
 			})
@@ -40,15 +38,15 @@ export const getMarketData=(id)=>(dispatch)=>{
 
 export const addMarketData=(input,viewList,initiateList)=>(dispatch)=>{
 		if(input.name!=""||input.ticker!==""){
-			
+			console.log(initiateList);
 			const newList=[];
 			const newViewList=[];
-			initiateList.map((list)=>{if(list.name.toLowerCase()==input.name.toLowerCase()){
+			initiateList.map((list)=>{if(list.name.toLowerCase()==input.name.toLowerCase()||list.symbol.toLowerCase()==input.name.toLowerCase()){
 				newList.push(list)
 			}});
 			globalApis.get("/coins/markets",{params:{
 				vs_currency:"usd",
-				ids:newList[0].id,
+				ids:newList.length<=0?"":newList[0].id,
 				price_change_percentage:"7d",sparkline:true
 			}},{}).then((data)=>{
 				newList.map((newList)=>{

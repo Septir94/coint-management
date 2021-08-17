@@ -3,12 +3,19 @@
     top: 0;
     text-align: left;
     width: 100vw;
-    height: 2vw;
-    background-color: aliceblue;
+    height: 5vh;
+    background-color: #00539CFF;
     font-weight: bold;
-    color: coral;
-
+    color: #EEA47FFF;
+    
 }
-.title {
+.header-container .title {
     margin-left: 2vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+.header-container .title label {
+    margin-left: 1vw;
 }

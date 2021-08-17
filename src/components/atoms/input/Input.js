@@ -19,8 +19,7 @@ export default function Input() {
     }
     return (
         <div className="input-container">
-            <input type="text" placeholder="please input name "name="name" onChange={onChange} value={input.name}></input>
-            <input type="text" placeholder="please input ticker " name="ticker" onChange={onChange} value={input.ticker}></input>
+            <input type="text" placeholder="please input name or ticker "name="name" onChange={onChange} value={input.name}></input>
             <button style={{color:"white",backgroundColor:"GrayText",height:"25px",borderRadius:"5px"}}
             onClick={onSubmit}>add cryptocurrencies</button>
         </div>
